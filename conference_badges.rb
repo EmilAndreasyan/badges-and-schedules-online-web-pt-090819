@@ -11,9 +11,16 @@ def batch_badge_creator(name)
 end
 batch_badge_creator(names)
 
-def assign_room(name)
+def assign_rooms(name)
   name.each_with_index do |person, index|
     puts "Hello, #{person}, you'll be assigned to room #{index}"
   end
 end
-assign_room(names)
+assign_rooms(names)
+
+def printer(a, b)
+  print "a"
+  print "b"
+  
+end
+printer(batch_badge_creator, assign_rooms)
